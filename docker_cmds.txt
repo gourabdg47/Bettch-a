@@ -2,7 +2,6 @@
 docker-compose up --build
 docker-compose up
 docker-compose stop
-docker-compose exec website py.test bettch_core/tests/   # For running pytest
 
 docker-compose rm -f
 docker rmi -f $(docker images -qf dangling=true)
